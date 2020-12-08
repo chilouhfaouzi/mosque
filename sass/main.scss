@@ -1,0 +1,457 @@
+/* --------------------------
+:: Template Name: 
+:: Description:
+:: Created: 10/10/2020  MM/DD/YYYY
+-------------------------- */
+
+/* ----------------------
+
+[Table of contents]
+01.Base CSS
+02.Header CSS
+
+
+ --------------------------*/
+
+/*  ----------- 01- Start Base CSS  ----------- */
+
+:root {
+  --main-green-color: #465d50;
+  --main-orange-color: rgba(255, 111, 72, 1);
+}
+ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+a,
+a:hover {
+  color: inherit;
+}
+a:hover {
+  text-decoration: none;
+}
+li {
+  padding: 0;
+  margin: 0;
+}
+.btn {
+  border-radius: 0;
+}
+
+body {
+  font-family: "Alice", serif;
+}
+section {
+  padding: 45px 0;
+}
+
+@media (max-width: 992px) {
+  section {
+    padding: 30px 0;
+  }
+}
+
+p {
+  font-family: "Open Sans";
+  font-weight: 400;
+  font-style: normal;
+  font-size: 16px;
+}
+img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+html {
+  overflow-x: hidden;
+}
+/*  ----------- 01 -End Base CSS   -----------*/
+
+/* ----------- 02 -start Header CSS   -----------*/
+header {
+  height: 75vh; // v2:100vh
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  .img_back img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+  }
+  .h-content {
+    z-index: 99;
+    text-align: center;
+    width: 20vw; // 22vw
+
+    .main-content {
+      background-color: rgba(255, 255, 255, 0.685);
+      padding: 9vh 4vh 2vh;
+      margin-bottom: 2vh;
+
+      .img_logo {
+        img {
+          width: 6vw;
+          height: 14vh; //15vh
+        }
+        .logo-title {
+          font-size: 1.6em;
+          color: #3d5aa4;
+          font-weight: bolder;
+          line-height: 1.5;
+        }
+      }
+      .motivation {
+        font-size: 1.2em; //v2:1.4
+        font-weight: 500;
+        line-height: 1.2; //v2:1.5
+
+        margin: 1.5vh 0; //v2 2vh 0
+      }
+      .desc {
+        font-size: 0.7em;
+        font-weight: 600;
+        margin: 1vh 0 2.5vh; // 1vh 0  4vh
+      }
+    }
+  }
+  .decovrir_btn {
+    margin: 3vh 0 5vh;
+    text-align: center;
+
+    .btn {
+      background-color: #cebc8d;
+      color: #fff;
+      text-align: left;
+      text-transform: uppercase;
+      font-size: 0.5em;
+      padding: 5px 18px;
+      line-height: 1.2;
+      display: flex;
+      align-items: center;
+      margin-left: auto;
+      margin-right: auto;
+      justify-content: space-between;
+      img {
+        width: 24px;
+        margin-right: 8px;
+      }
+    }
+  }
+  .carousel {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 75vh; //V2:100vh
+    width: 100vw;
+    .carousel-inner {
+      width: 100%;
+      height: 100%;
+      .carousel-item {
+        width: 100%;
+        height: 100%;
+      }
+    }
+  }
+  .carousel-indicators {
+    bottom: 1vh; //V2: 3vh
+    li {
+      width: 7px;
+      height: 7px;
+      border-radius: 50%;
+      background-color: transparent;
+      border: 1px solid #fff;
+    }
+    li.active {
+      background-color: #fff;
+    }
+  }
+}
+.menu {
+  width: 100vw;
+
+  z-index: 990;
+  .navbar {
+    background-color: #cebc8d;
+    .nav-item {
+      margin: 0 25px;
+      padding: 2px 0; //V2 : 8PX
+    }
+    .nav-link {
+      font-size: 0.9em;
+    }
+    .active {
+      font-size: 0.9em;
+      font-weight: 600;
+    }
+    .nav-link,
+    .active {
+      color: #fff !important;
+    }
+  }
+}
+/* ----------- 02 -End Header CSS   -----------*/
+/* ----------- 04 -Start Center  CSS   -----------*/
+.center {
+  padding: 100px 0;
+  .m-title {
+    font-size: 2.5em;
+    margin-bottom: 5vh;
+    text-indent: 15px;
+    letter-spacing: 2px;
+  }
+  p {
+    font-size: 0.7em;
+    color: #666;
+    text-indent: 5px;
+    width: 80%;
+  }
+  .btn {
+    border: 1px solid #333;
+    color: #222;
+    padding: 5px 15px;
+    font-size: 0.9em;
+    margin-top: 4vh;
+  }
+  .carousel-indicators {
+    bottom: -4vh;
+    li {
+      border: 1px solid #000;
+      background-color: transparent;
+      width: 11px;
+      height: 11px;
+      border-radius: 50%;
+    }
+  }
+  .carousel-indicators li.active {
+    background-color: #333;
+  }
+  .btn:hover {
+    background-color: #111;
+    color: #fff !important;
+  }
+  .carousel-control-next-icon {
+    background-image: url("../files/FLECHE.png");
+    height: 6vh;
+  }
+  .carousel-control-next {
+    right: -3vw;
+  }
+}
+/* ----------- 03 -End Menu CSS   -----------*/
+/* ----------- 05  Start Donate CSS   -----------*/
+.donate {
+  background: url("../files/back_donate.png") no-repeat;
+  background-size: cover;
+  text-align: center;
+  color: #fff;
+  text-transform: uppercase;
+  .c100.big {
+    font-size: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    float: none;
+  }
+  .c100 > span {
+    color: #fff;
+    top: -2vh;
+  }
+  .c100::after {
+    background: url(../files/back_donate.png) no-repeat;
+  }
+  .att {
+    position: absolute;
+    top: 15vh !important;
+    left: 9vh !important;
+    font-size: 18px;
+    text-transform: uppercase;
+  }
+  .recolte {
+    font-size: 2.4em;
+  }
+  .total {
+    font-size: 2.5em;
+  }
+  p {
+    font-size: 0.9em;
+    font-weight: 400;
+  }
+  .btn {
+    color: #fff;
+    border: 1px solid #fff;
+    padding: 12px 20px;
+    font-size: 1.1em;
+  }
+}
+/* ----------- 05 -End donate CSS   -----------*/
+
+.pilier {
+  .img_pilier {
+    margin: auto;
+    text-align: center;
+    padding: 15vh 0 0;
+  }
+  img {
+    width: 88vw;
+    margin: auto;
+    height: 80vh;
+  }
+}
+
+.preire {
+  background: url("../files/horr.png") no-repeat;
+  background-size: cover;
+  height: 530px;
+  color: #fff;
+  padding: 60px 0;
+  .row > .col-10 {
+    padding: 0;
+  }
+  .horaire-title {
+    font-size: 2.6em;
+    margin-bottom: 20px;
+  }
+  ul li {
+    padding: 10px 0;
+    .jour {
+      font-size: 1.1em;
+      font-weight: 600;
+    }
+    .time {
+      margin-left: 20px;
+      font-weight: 300;
+      font-size: 0.65em;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+  }
+  .min_hr {
+    height: 1px;
+    width: 20vw;
+    background-color: rgba(255, 255, 255, 0.575);
+    display: block;
+  }
+}
+
+.association {
+  padding: 0 0 50px;
+  .above {
+    background: url("../files/fond.png") no-repeat;
+    background-size: cover;
+    text-align: center;
+    color: #fff;
+    padding: 6% 0 12%;
+    p {
+      width: 60%;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+  .below {
+    text-align: center;
+    margin-top: -15vh;
+    .activitie {
+      .my_icon {
+        background-color: #3d5aa4;
+        border-radius: 50%;
+        padding: 24px;
+        text-align: center;
+        width: 155px;
+        height: 155px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        img {
+          width: 90%;
+        }
+      }
+      .act-title {
+        font-size: 1.2em;
+        text-transform: capitalize;
+      }
+      .act-desc {
+        font-size: 0.8em;
+        color: #666;
+
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+      }
+    }
+  }
+}
+
+/*Contact */
+.contact {
+  padding: 45px;
+  background-color: #000;
+  color: #fff;
+  font-family: Arial, Helvetica, sans-serif;
+  .logo_fot {
+    text-align: center;
+
+    img {
+      width: 40%;
+    }
+  }
+  .info_contact {
+    text-align: left;
+    .con-title {
+      font-weight: 600;
+      margin-bottom: 20px;
+      font-size: 1.3em;
+    }
+    .con-adresse {
+      font-size: 0.8em;
+      color: #999;
+    }
+    .nous_contact {
+      font-size: 1.3em;
+      font-weight: 600;
+      margin-bottom: 16px;
+    }
+    .social_foot {
+      li {
+        background-color: #fff;
+        display: inline-block;
+        border-radius: 50%;
+        padding: 8px 10px;
+        margin-right: 12px;
+        cursor: pointer;
+        img {
+          width: 22px;
+        }
+      }
+      .phone:hover {
+        background-color: #465d50;
+      }
+      .fb:hover {
+        background-color: #3b5998;
+      }
+      .mail:hover {
+        background-color: #ff4c4c;
+      }
+    }
+  }
+}
+/*EndContact */
+
+.footer {
+  background-color: #2a261c;
+  text-align: center;
+  padding: 10px 0 12px;
+  font-family: Arial, Helvetica, sans-serif;
+  ul {
+    li {
+      display: inline-block;
+      color: #bbb;
+      margin: 0 20px;
+      font-size: 0.65em;
+    }
+  }
+}

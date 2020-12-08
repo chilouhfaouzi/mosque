@@ -1,0 +1,5 @@
+---> :: Template Name: Wayfaring - Travel Landing Page 
+:: Description:Travel is a One Page Travel  Landing Template. It's very clean, creative & beautiful. It's super responsive & ultra light.
+:: Created: 10/10/2020  MM/DD/YYYY
+
+--->No vidoe and No Motivation in small screen (max width : 992px) (Phone and Ipad ) 
