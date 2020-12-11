@@ -291,10 +291,18 @@ header .carousel-indicators li.active {
   text-align: center;
   color: #fff;
   text-transform: uppercase;
+  /*
+  .att {
+    position: absolute;
+    top: 15vh !important;
+    left: 9vh !important;
+    font-size: 18px;
+    text-transform: uppercase;
+  }*/
 }
 
 .donate .c100.big {
-  font-size: 230px;
+  font-size: 235px;
   margin-left: auto;
   margin-right: auto;
   float: none;
@@ -306,14 +314,6 @@ header .carousel-indicators li.active {
 
 .donate .c100::after {
   background: url(../files/back_donate.png) no-repeat;
-}
-
-.donate .att {
-  position: absolute;
-  top: 15vh !important;
-  left: 9vh !important;
-  font-size: 18px;
-  text-transform: uppercase;
 }
 
 .donate .recolte {
