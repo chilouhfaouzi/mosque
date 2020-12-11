@@ -1,535 +1,521 @@
-/* --------------------------
-:: Template Name: 
-:: Description:
-:: Created: 10/10/2020  MM/DD/YYYY
--------------------------- */
-/* ----------------------
-
-[Table of contents]
-01.Base CSS
-02.Header CSS
-
-
- --------------------------*/
-/*  ----------- 01- Start Base CSS  ----------- */
-:root {
-  --main-green-color: #465d50;
-  --main-orange-color: rgba(255, 111, 72, 1);
-}
-
-ul {
-  padding: 0;
-  margin: 0;
-  list-style: none;
-}
-
-a,
-a:hover {
-  color: inherit;
-}
-
-a:hover {
-  text-decoration: none;
-}
-
-li {
-  padding: 0;
-  margin: 0;
-}
-
-.btn {
-  border-radius: 0;
-}
-
-body {
-  font-family: "Alice", serif;
-}
-
-section {
-  padding: 45px 0;
-}
-
-@media (max-width: 992px) {
-  section {
-    padding: 30px 0;
-  }
-}
-
-p {
-  font-family: "Open Sans";
-  font-weight: 400;
-  font-style: normal;
-  font-size: 16px;
-}
-
-img {
-  max-width: 100%;
-  max-height: 100%;
-}
-
-html {
-  overflow-x: hidden;
-}
-
-/*  ----------- 01 -End Base CSS   -----------*/
-/* ----------- 02 -start Header CSS   -----------*/
-header {
-  height: 75vh;
-  position: relative;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
-}
-
-header .img_back img {
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 100vh;
-  width: 100vw;
-}
-
-header .h-content {
-  z-index: 99;
-  text-align: center;
-  width: 20vw;
-}
-
-header .h-content .main-content {
-  background-color: rgba(255, 255, 255, 0.685);
-  padding: 9vh 4vh 2vh;
-  margin-bottom: 2vh;
-}
-
-header .h-content .main-content .img_logo img {
-  width: 6vw;
-  height: 14vh;
-}
-
-header .h-content .main-content .img_logo .logo-title {
-  font-size: 1.6em;
-  color: #3d5aa4;
-  font-weight: bolder;
-  line-height: 1.5;
-}
-
-header .h-content .main-content .motivation {
-  font-size: 1.2em;
-  font-weight: 500;
-  line-height: 1.2;
-  margin: 1.5vh 0;
-}
-
-header .h-content .main-content .desc {
-  font-size: 0.7em;
-  font-weight: 600;
-  margin: 1vh 0 2.5vh;
-}
-
-header .decovrir_btn {
-  margin: 3vh 0 5vh;
-  text-align: center;
-}
-
-header .decovrir_btn .btn {
-  background-color: #cebc8d;
-  color: #fff;
-  text-align: left;
-  text-transform: uppercase;
-  font-size: 0.5em;
-  padding: 5px 18px;
-  line-height: 1.2;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  margin-left: auto;
-  margin-right: auto;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-
-header .decovrir_btn .btn img {
-  width: 24px;
-  margin-right: 8px;
-}
-
-header .carousel {
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 75vh;
-  width: 100vw;
-}
-
-header .carousel .carousel-inner {
-  width: 100%;
-  height: 100%;
-}
-
-header .carousel .carousel-inner .carousel-item {
-  width: 100%;
-  height: 100%;
-}
-
-header .carousel-indicators {
-  bottom: 1vh;
-}
-
-header .carousel-indicators li {
-  width: 7px;
-  height: 7px;
-  border-radius: 50%;
-  background-color: transparent;
-  border: 1px solid #fff;
-}
-
-header .carousel-indicators li.active {
-  background-color: #fff;
-}
-
-.menu {
-  width: 100vw;
-  z-index: 990;
-}
-
-.menu .navbar {
-  background-color: #cebc8d;
-}
-
-.menu .navbar .nav-item {
-  margin: 0 25px;
-  padding: 2px 0;
-}
-
-.menu .navbar .nav-link {
-  font-size: 0.9em;
-}
-
-.menu .navbar .active {
-  font-size: 0.9em;
-  font-weight: 600;
-}
-
-.menu .navbar .nav-link,
-.menu .navbar .active {
-  color: #fff !important;
-}
-
-/* ----------- 02 -End Header CSS   -----------*/
-/* ----------- 04 -Start Center  CSS   -----------*/
-.center {
-  padding: 100px 0;
-}
-
-.center .m-title {
-  font-size: 2.5em;
-  margin-bottom: 5vh;
-  text-indent: 15px;
-  letter-spacing: 2px;
-}
-
-.center p {
-  font-size: 0.7em;
-  color: #666;
-  text-indent: 5px;
-  width: 80%;
-}
-
-.center .btn {
-  border: 1px solid #333;
-  color: #222;
-  padding: 5px 15px;
-  font-size: 0.9em;
-  margin-top: 4vh;
-}
-
-.center .carousel-indicators {
-  bottom: -4vh;
-}
-
-.center .carousel-indicators li {
-  border: 1px solid #000;
-  background-color: transparent;
-  width: 11px;
-  height: 11px;
-  border-radius: 50%;
-}
-
-.center .carousel-indicators li.active {
-  background-color: #333;
-}
-
-.center .btn:hover {
-  background-color: #111;
-  color: #fff !important;
-}
-
-.center .carousel-control-next-icon {
-  background-image: url("../files/FLECHE.png");
-  height: 6vh;
-}
-
-.center .carousel-control-next {
-  right: -3vw;
-}
-
-/* ----------- 03 -End Menu CSS   -----------*/
-/* ----------- 05  Start Donate CSS   -----------*/
-.donate {
-  background: url("../files/back_donate.png") no-repeat;
-  background-size: cover;
-  text-align: center;
-  color: #fff;
-  text-transform: uppercase;
-  /*
-  .att {
-    position: absolute;
-    top: 15vh !important;
-    left: 9vh !important;
-    font-size: 18px;
-    text-transform: uppercase;
-  }*/
-}
-
-.donate .c100.big {
-  font-size: 235px;
-  margin-left: auto;
-  margin-right: auto;
-  float: none;
-}
-
-.donate .c100 > span {
-  color: #fff;
-}
-
-.donate .c100::after {
-  background: url(../files/back_donate.png) no-repeat;
-}
-
-.donate .recolte {
-  font-size: 2.7em;
-}
-
-.donate .total {
-  font-size: 2.8em;
-}
-
-.donate .p_recolte {
-  font-size: 0.9em;
-  font-weight: 600;
-}
-
-.donate .p_montant {
-  margin-top: 18px;
-  font-size: 0.9em;
-  font-weight: 600;
-}
-
-.donate .btn {
-  color: #fff;
-  border: 2px solid #fff;
-  padding: 16px 30px;
-  font-size: 1.4em;
-}
-
-/* ----------- 05 -End donate CSS   -----------*/
-.pilier .img_pilier {
-  margin: auto;
-  text-align: center;
-  padding: 15vh 0 0;
-}
-
-.pilier img {
-  width: 78vw;
-  margin: auto;
-  height: 78vh;
-}
-
-.preire {
-  background: url("../files/horr.png") no-repeat;
-  background-size: cover;
-  height: 530px;
-  color: #fff;
-  padding: 60px 0;
-}
-
-.preire .row > .col-10 {
-  padding: 0;
-}
-
-.preire .horaire-title {
-  font-size: 2.6em;
-  margin-bottom: 20px;
-}
-
-.preire ul li {
-  padding: 10px 0;
-}
-
-.preire ul li .jour {
-  font-size: 1.1em;
-  font-weight: 600;
-}
-
-.preire ul li .time {
-  margin-left: 20px;
-  font-weight: 300;
-  font-size: 0.65em;
-  font-family: Arial, Helvetica, sans-serif;
-}
-
-.preire .min_hr {
-  height: 1px;
-  width: 20vw;
-  background-color: rgba(255, 255, 255, 0.575);
-  display: block;
-}
-
-.association {
-  padding: 0 0 50px;
-}
-
-.association .above {
-  background: url("../files/fond.png") no-repeat;
-  background-size: cover;
-  text-align: center;
-  color: #fff;
-  padding: 6% 0 12%;
-}
-
-.association .above p {
-  width: 60%;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.association .below {
-  text-align: center;
-  margin-top: -15vh;
-}
-
-.association .below .activitie .my_icon {
-  background-color: #3d5aa4;
-  border-radius: 50%;
-  padding: 24px;
-  text-align: center;
-  width: 155px;
-  height: 155px;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 30px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-.association .below .activitie .my_icon img {
-  width: 90%;
-}
-
-.association .below .activitie .act-title {
-  font-size: 1.2em;
-  text-transform: capitalize;
-}
-
-.association .below .activitie .act-desc {
-  font-size: 0.8em;
-  color: #666;
-  width: 80%;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-/*Contact */
-.contact {
-  padding: 45px;
-  background-color: #000;
-  color: #fff;
-  font-family: Arial, Helvetica, sans-serif;
-}
-
-.contact .logo_fot {
-  text-align: center;
-}
-
-.contact .logo_fot img {
-  width: 40%;
-}
-
-.contact .info_contact {
-  text-align: left;
-}
-
-.contact .info_contact .con-title {
-  font-weight: 600;
-  margin-bottom: 20px;
-  font-size: 1.3em;
-}
-
-.contact .info_contact .con-adresse {
-  font-size: 0.8em;
-  color: #999;
-}
-
-.contact .info_contact .nous_contact {
-  font-size: 1.3em;
-  font-weight: 600;
-  margin-bottom: 16px;
-}
-
-.contact .info_contact .social_foot li {
-  background-color: #fff;
-  display: inline-block;
-  border-radius: 50%;
-  padding: 8px 10px;
-  margin-right: 12px;
-  cursor: pointer;
-}
-
-.contact .info_contact .social_foot li img {
-  width: 22px;
-}
-
-.contact .info_contact .social_foot .phone:hover {
-  background-color: #465d50;
-}
-
-.contact .info_contact .social_foot .fb:hover {
-  background-color: #3b5998;
-}
-
-.contact .info_contact .social_foot .mail:hover {
-  background-color: #ff4c4c;
-}
-
-/*EndContact */
-.footer {
-  background-color: #2a261c;
-  text-align: center;
-  padding: 10px 0 12px;
-  font-family: Arial, Helvetica, sans-serif;
-}
-
-.footer ul li {
-  display: inline-block;
-  color: #bbb;
-  margin: 0 20px;
-  font-size: 0.65em;
-}
-/*# sourceMappingURL=main.css.map */
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <!--Bootstrap require-->
+    <link rel="stylesheet" href="css/bootstrap.css" />
+    <link rel="stylesheet" href="circle/css/circle.css" />
+
+    <link rel="stylesheet" href="css/animate.css" />
+    <link rel="stylesheet" href="css/main.css" />
+
+    <!--Include font Arvo  -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Alice&display=swap"
+      rel="stylesheet"
+    />
+    <title>Mosque</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="h-content">
+        <div class="main-content">
+          <div class="img_logo">
+            <img src="files/alfath_logo.png" alt="" />
+            <h2 class="logo-title">AL FATH</h2>
+          </div>
+
+          <h4 class="motivation">
+            Centre <br />
+            Cultuel & Culurel <br />de Kingersheim
+          </h4>
+          <p class="desc">
+            Découvrez la mosquéede<br />
+            la ville de Kingersheim
+          </p>
+        </div>
+        <div class="decovrir_btn">
+          <button class="btn">
+            <img src="files/PLAY.png" alt="" />
+            <span class="txt">
+              Découvrez<br />
+              le projet en vidéo
+            </span>
+          </button>
+        </div>
+      </div>
+      <div
+        id="carouselExampleIndicators"
+        class="carousel slide"
+        data-ride="carousel"
+      >
+        <ol class="carousel-indicators">
+          <li
+            data-target="#carouselExampleIndicators"
+            data-slide-to="0"
+            class="active"
+          ></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+        </ol>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="img_back">
+              <img src="files/h_fond1.jpeg" alt="" />
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="img_back">
+              <img src="files/h_fond2.jpeg" alt="" />
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="img_back">
+              <img src="files/h_fond3.jpeg" alt="" />
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="img_back">
+              <img src="files/h_fond4.jpeg" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <div class="menu">
+      <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container-fluid">
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0 ml-auto mr-auto">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#"
+                  >Accueil
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Le projet</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Islam </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Activités</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Qui sommes-nous </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#"> Dons </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </div>
+    <section class="center container">
+      <div class="row">
+        <div class="col-md-6">
+          <div
+            id="carouselExampleIndicators2"
+            class="carousel slide"
+            data-ride="carousel"
+          >
+            <ol class="carousel-indicators">
+              <li
+                data-target="#carouselExampleIndicators2"
+                data-slide-to="0"
+                class="active"
+              ></li>
+              <li
+                data-target="#carouselExampleIndicators2"
+                data-slide-to="1"
+              ></li>
+              <li
+                data-target="#carouselExampleIndicators2"
+                data-slide-to="2"
+              ></li>
+              <li
+                data-target="#carouselExampleIndicators2"
+                data-slide-to="3"
+              ></li>
+            </ol>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <div class="img_back">
+                  <img src="files/croquis1.png" alt="" />
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="img_back">
+                  <img src="files/croquis2.png" alt="" />
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="img_back">
+                  <img src="files/croquis1.png" alt="" />
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="img_back">
+                  <img src="files/croquis2.png" alt="" />
+                </div>
+              </div>
+            </div>
+            <!--  <a
+              class="carousel-control-prev"
+              href="#carouselExampleControls2"
+              role="button"
+              data-bs-slide="prev"
+            >
+              <span
+                class="carousel-control-prev-icon"
+                aria-hidden="true"
+              ></span>
+            </a>
+            <a
+              class="carousel-control-next"
+              href="#carouselExampleControls2"
+              role="button"
+              data-bs-slide="next"
+            >
+              <span
+                class="carousel-control-next-icon"
+                aria-hidden="true"
+              ></span>
+            </a>-->
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="content">
+            <h3 class="m-title">Centre Al Fath</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam
+              quas aliquid facere consequatur voluptates, debitis natus odit
+              quam libero obcaecati at modi veniam possimus omnis repellendus
+              nobis quia. Accusantium, quisquam. Lorem, ipsum dolor sit amet
+              consectetur adipisicing elit. Id praesentium expedita ea eos
+              laborum earum beatae! Quod facere, aliquam perspiciatis maxime
+              quis neque consequatur, expedita alias voluptatum quas, veritatis
+              ut ,Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Libero ducimus possimus excepturi sed necessitatibus earum rerum
+              ratione quasi, optio debitis corporis ea fuga natus nisi neque
+              dolorum officia quae Ut quis neque consequatur, expedita alias
+              voluptatum quas, veritatis ut ,Lorem ipsum dolor sit amet
+              consectetur adipisicing elit. Libero ducimus possimus excepturi
+              sed necessitatibus earum rerum ratione quasi, optio debitis
+              corporis ea fuga natus nisi neque dolorum officia quae Ut.
+            </p>
+            <div class="btn">En savoir Plus</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="donate">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-md-4">
+            <div class="c100 p82 big">
+              <span>82<span style="font-size: 1.05em">%</span></span>
+
+              <div class="slice">
+                <div class="bar"></div>
+                <div class="fill"></div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <h4 class="recolte">105 697 €</h4>
+            <p class="p_recolte">récolté</p>
+            <p class="p_montant">sur un montant total de</p>
+            <h4 class="total">1 200 500 €</h4>
+          </div>
+          <div
+            class="col-md-4 d-flex align-items-center justify-content-center"
+          >
+            <div class="my_btn_donate">
+              <button class="btn">Devenez donateur</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="pilier">
+      <div class="img_pilier">
+        <img src="files/5_PILIERS.png" alt="" />
+      </div>
+    </div>
+    <section class="preire">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8">
+            <h4 class="horaire-title">Horaires de prière</h4>
+            <ul class="horaiere">
+              <li>
+                <div class="row">
+                  <div class="col-2"><span class="jour">Samedi </span></div>
+                  <div class="col-10">
+                    <span class="time">xxhxx</span>
+                    <span class="time">xxhxx</span>
+                    <span class="time">xxhxx</span>
+                    <span class="time">xxhxx</span>
+                    <span class="time">xxhxx</span>
+                    <span class="time">xxhxx</span>
+                  </div>
+                </div>
+              </li>
+              <span class="min_hr"></span>
+              <li>
+                <div class="row">
+                  <div class="col-2"><span class="jour">Dimanche </span></div>
+                  <div class="col-10">
+                    <span class="time">xxhxx</span>
+                    <span class="time">xxhxx</span>
+                    <span class="time">xxhxx</span>
+                    <span class="time">xxhxx</span>
+                    <span class="time">xxhxx</span>
+                    <span class="time">xxhxx</span>
+                  </div>
+                </div>
+              </li>
+              <span class="min_hr"></span>
+              <li>
+                <div class="row">
+                  <div class="col-2"><span class="jour">Lundi </span></div>
+                  <div class="col-10">
+                    <span class="time">xxhxx</span>
+                    <span class="time">xxhxx</span>
+                    <span class="time">xxhxx</span>
+                    <span class="time">xxhxx</span>
+                    <span class="time">xxhxx</span>
+                    <span class="time">xxhxx</span>
+                  </div>
+                </div>
+              </li>
+              <span class="min_hr"></span>
+              <li>
+                <div class="row">
+                  <div class="col-2"><span class="jour">Mardi </span></div>
+                  <div class="col-10">
+                    <span class="time">xxhxx</span>
+                    <span class="time">xxhxx</span>
+                    <span class="time">xxhxx</span>
+                    <span class="time">xxhxx</span>
+                    <span class="time">xxhxx</span>
+                    <span class="time">xxhxx</span>
+                  </div>
+                </div>
+              </li>
+              <span class="min_hr"></span>
+              <li>
+                <div class="row">
+                  <div class="col-2"><span class="jour">Mercredi </span></div>
+                  <div class="col-10">
+                    <span class="time">xxhxx</span>
+                    <span class="time">xxhxx</span>
+                    <span class="time">xxhxx</span>
+                    <span class="time">xxhxx</span>
+                    <span class="time">xxhxx</span>
+                    <span class="time">xxhxx</span>
+                  </div>
+                </div>
+              </li>
+              <span class="min_hr"></span>
+              <li>
+                <div class="row">
+                  <div class="col-2"><span class="jour">Jeudi </span></div>
+                  <div class="col-10">
+                    <span class="time">xxhxx</span>
+                    <span class="time">xxhxx</span>
+                    <span class="time">xxhxx</span>
+                    <span class="time">xxhxx</span>
+                    <span class="time">xxhxx</span>
+                    <span class="time">xxhxx</span>
+                  </div>
+                </div>
+              </li>
+              <span class="min_hr"></span>
+              <li>
+                <div class="row">
+                  <div class="col-2"><span class="jour">Vendredi </span></div>
+                  <div class="col-10">
+                    <span class="time">xxhxx</span>
+                    <span class="time">xxhxx</span>
+                    <span class="time">xxhxx</span>
+                    <span class="time">xxhxx</span>
+                    <span class="time">xxhxx</span>
+                    <span class="time">xxhxx</span>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="association">
+      <div class="above">
+        <div class="container">
+          <h3 class="as-title">Notre association</h3>
+          <p class="as desc">
+            Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
+            nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat
+            volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation
+            ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo
+            consequat.
+          </p>
+        </div>
+      </div>
+      <div class="below">
+        <div class="container">
+          <div class="row">
+            <div class="col-md">
+              <div class="activitie">
+                <div class="my_icon">
+                  <img src="files/culte.png" alt="" />
+                </div>
+                <h4 class="act-title">Culte</h4>
+                <p class="act-desc">
+                  Culte ipsum dolor sit amet, consectetuer adipiscing elit, sed
+                  diam nonummy nibh euismod tincidunt ut laoreet dolore
+                </p>
+              </div>
+            </div>
+            <div class="col-md">
+              <div class="activitie">
+                <div class="my_icon">
+                  <img src="files/education.png" alt="" />
+                </div>
+                <h4 class="act-title">éducation</h4>
+                <p class="act-desc">
+                  Culte ipsum dolor sit amet, consectetuer adipiscing elit, sed
+                  diam nonummy nibh euismod tincidunt ut laoreet dolore
+                </p>
+              </div>
+            </div>
+            <div class="col-md">
+              <div class="activitie">
+                <div class="my_icon">
+                  <img src="files/fraternité.png" alt="" />
+                </div>
+                <h4 class="act-title">Fraternité</h4>
+                <p class="act-desc">
+                  Culte ipsum dolor sit amet, consectetuer adipiscing elit, sed
+                  diam nonummy nibh euismod tincidunt ut laoreet dolore
+                </p>
+              </div>
+            </div>
+            <div class="col-md">
+              <div class="activitie">
+                <div class="my_icon">
+                  <img src="files/paix.png" alt="" />
+                </div>
+                <h4 class="act-title">paix</h4>
+                <p class="act-desc">
+                  Culte ipsum dolor sit amet, consectetuer adipiscing elit, sed
+                  diam nonummy nibh euismod tincidunt ut laoreet dolore
+                </p>
+              </div>
+            </div>
+            <div class="col-md">
+              <div class="activitie">
+                <div class="my_icon">
+                  <img src="files/loisir.png" alt="" />
+                </div>
+                <h4 class="act-title">Loisir</h4>
+                <p class="act-desc">
+                  Culte ipsum dolor sit amet, consectetuer adipiscing elit, sed
+                  diam nonummy nibh euismod tincidunt ut laoreet dolore
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="contact">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8">
+            <div class="row">
+              <div class="col-md-5">
+                <div class="logo_fot">
+                  <img src="files/logo_foot.png" alt="" />
+                </div>
+              </div>
+              <div class="col-md-6 offset-md-1">
+                <div class="info_contact">
+                  <h4 class="con-title">A2CSK</h4>
+                  <p class="con-adresse">
+                    2 bis rue du Béarn <br />68260 <br />Kingersheim
+                  </p>
+                  <h4 class="nous_contact">Nous Contacter</h4>
+                  <ul class="social_foot">
+                    <li class="phone">
+                      <a href="">
+                        <img src="files/téléphone.png" alt="" />
+                      </a>
+                    </li>
+                    <li class="fb">
+                      <a href="">
+                        <img src="files/facebook.png" alt="" />
+                      </a>
+                    </li>
+                    <li class="mail">
+                      <a href="">
+                        <img src="files/mail.png" alt="" />
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer class="footer">
+      <ul>
+        <li>
+          <a href="">Mentions Légales </a>
+        </li>
+        <li>
+          <a href=""> Nous contacter </a>
+        </li>
+        <li>
+          <a href="">Plan du site </a>
+        </li>
+      </ul>
+    </footer>
+
+    <!--Slick Js -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/wow.js"></script>
+    <script>
+      new WOW().init();
+    </script>
+  </body>
+</html>
