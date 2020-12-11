@@ -317,23 +317,29 @@ header .carousel-indicators li.active {
 }
 
 .donate .recolte {
-  font-size: 2.4em;
+  font-size: 2.7em;
 }
 
 .donate .total {
-  font-size: 2.5em;
+  font-size: 2.8em;
 }
 
-.donate p {
+.donate .p_recolte {
   font-size: 0.9em;
-  font-weight: 400;
+  font-weight: 600;
+}
+
+.donate .p_montant {
+  margin-top: 18px;
+  font-size: 0.9em;
+  font-weight: 600;
 }
 
 .donate .btn {
   color: #fff;
-  border: 1px solid #fff;
-  padding: 12px 20px;
-  font-size: 1.1em;
+  border: 2px solid #fff;
+  padding: 16px 30px;
+  font-size: 1.4em;
 }
 
 /* ----------- 05 -End donate CSS   -----------*/
