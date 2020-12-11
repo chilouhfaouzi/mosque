@@ -294,7 +294,7 @@ header .carousel-indicators li.active {
 }
 
 .donate .c100.big {
-  font-size: 200px;
+  font-size: 230px;
   margin-left: auto;
   margin-right: auto;
   float: none;
@@ -302,7 +302,6 @@ header .carousel-indicators li.active {
 
 .donate .c100 > span {
   color: #fff;
-  top: -2vh;
 }
 
 .donate .c100::after {
