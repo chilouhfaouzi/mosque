@@ -611,7 +611,13 @@ header .carousel-indicators li.active {
 
 @media (max-width: 992px) {
   .preire ul li .time {
-    margin-left: 18px;
+    margin-left: 16px;
+  }
+}
+
+@media (max-width: 992px) {
+  .preire ul li .row .time:first-child {
+    margin-left: 36px;
   }
 }
 
@@ -811,9 +817,3 @@ header .carousel-indicators li.active {
 }
 
 @media (max-width: 992px) {
-  .footer ul li {
-    margin: 0 14px;
-    font-size: 0.6;
-  }
-}
-/*# sourceMappingURL=main.css.map */
