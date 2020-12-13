@@ -437,10 +437,28 @@ header .carousel-indicators li.active {
   background: url(../files/back_donate.png) no-repeat;
 }
 
+.donate .row > div {
+  height: 240px;
+}
+
+@media (max-width: 992px) {
+  .donate .row > div {
+    height: auto;
+  }
+}
+
+.donate .stats {
+  border-right: 1px solid #fff;
+}
+
 @media (max-width: 992px) {
   .donate .stats {
     margin-bottom: 2vh;
   }
+}
+
+.donate .money {
+  border-right: 1px solid #fff;
 }
 
 @media (max-width: 992px) {
