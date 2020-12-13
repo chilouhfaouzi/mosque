@@ -1,6 +1,8 @@
 $(document).ready(function () {
   var d = new Date();
-  var day = d.getDay();
+  var daym = d.getDate();
+  var dayse = d.getDay();
+
   var month = d.getMonth() + 1;
   var yaer = d.getFullYear;
   var days = [
@@ -16,11 +18,13 @@ $(document).ready(function () {
   const settings = {
     async: true,
     crossDomain: true,
+
     url:
-      "https://aladhan.p.rapidapi.com/calendarByCity?city=Paris&country=FR&month=" +
+      "https://aladhan.p.rapidapi.com/calendarByAddress?address=2%20rue%20du%20bearn%2068260%20Kingersheim&month" +
       month +
       "&year=" +
-      yaer,
+      yaer +
+      "&method=12",
     method: "GET",
     headers: {
       "x-rapidapi-key": "6bda6847a3mshe25dd31051d942dp167614jsn86fbbdbae538",
@@ -33,18 +37,22 @@ $(document).ready(function () {
     timessalat = response["data"];
     console.log(timessalat);
     for (var i = 0; i < 7; i++) {
-      $("#fajr" + i).text(timessalat[day + i]["timings"]["Fajr"].slice(0, -5));
+      $("#fajr" + i).text(timessalat[daym + i]["timings"]["Fajr"].slice(0, -5));
       $("#Sunrise" + i).text(
-        timessalat[day + i]["timings"]["Sunrise"].slice(0, -5)
+        timessalat[daym + i]["timings"]["Sunrise"].slice(0, -5)
       );
-      $("#dohr" + i).text(timessalat[day + i]["timings"]["Dhuhr"].slice(0, -5));
-      $("#3asr" + i).text(timessalat[day + i]["timings"]["Asr"].slice(0, -5));
+      $("#dohr" + i).text(
+        timessalat[daym + i]["timings"]["Dhuhr"].slice(0, -5)
+      );
+      $("#3asr" + i).text(timessalat[daym + i]["timings"]["Asr"].slice(0, -5));
       $("#maghreb" + i).text(
-        timessalat[day + i]["timings"]["Maghrib"].slice(0, -5)
+        timessalat[daym + i]["timings"]["Maghrib"].slice(0, -5)
       );
-      $("#aicha" + i).text(timessalat[day + i]["timings"]["Isha"].slice(0, -5));
+      $("#aicha" + i).text(
+        timessalat[daym + i]["timings"]["Isha"].slice(0, -5)
+      );
 
-      $("#jour" + i).text(days[day + i]);
+      $("#jour" + i).text(days[dayse + i]);
     }
 
     /* var day1 = timessalat[day]["timings"];
