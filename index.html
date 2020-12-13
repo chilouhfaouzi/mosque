@@ -1,518 +1,817 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, shrink-to-fit=no"
-    />
-    <!--Bootstrap require-->
-    <link rel="stylesheet" href="css/bootstrap.css" />
-    <link rel="stylesheet" href="circle/css/circle.css" />
+/* --------------------------
+:: Template Name: 
+:: Description:
+:: Created: 10/10/2020  MM/DD/YYYY
+-------------------------- */
+/* ----------------------
 
-    <link rel="stylesheet" href="css/animate.css" />
-    <link rel="stylesheet" href="css/main.css" />
+[Table of contents]
+01.Base CSS
+02.Header CSS
 
-    <!--Include font Arvo  -->
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Alice&display=swap"
-      rel="stylesheet"
-    />
-    <title>Mosque</title>
-  </head>
-  <body>
-    <header class="header">
-      <div class="h-content">
-        <div class="main-content">
-          <div class="img_logo">
-            <img src="files/alfath_logo.png" alt="" />
-            <h2 class="logo-title">AL FATH</h2>
-          </div>
 
-          <h4 class="motivation">
-            Centre <br />
-            Cultuel & Culurel <br />de Kingersheim
-          </h4>
-          <p class="desc">
-            Découvrez la mosquéede<br />
-            la ville de Kingersheim
-          </p>
-        </div>
-        <div class="decovrir_btn">
-          <button class="btn">
-            <img src="files/PLAY.png" alt="" />
-            <span class="txt">
-              Découvrez<br />
-              le projet en vidéo
-            </span>
-          </button>
-        </div>
-      </div>
-      <div
-        id="carouselExampleIndicators"
-        class="carousel slide"
-        data-ride="carousel"
-      >
-        <ol class="carousel-indicators">
-          <li
-            data-target="#carouselExampleIndicators"
-            data-slide-to="0"
-            class="active"
-          ></li>
-          <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-          <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-          <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
-        </ol>
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <div class="img_back">
-              <img src="files/h_fond1.jpeg" alt="" />
-            </div>
-          </div>
-          <div class="carousel-item">
-            <div class="img_back">
-              <img src="files/h_fond2.jpeg" alt="" />
-            </div>
-          </div>
-          <div class="carousel-item">
-            <div class="img_back">
-              <img src="files/h_fond3.jpeg" alt="" />
-            </div>
-          </div>
-          <div class="carousel-item">
-            <div class="img_back">
-              <img src="files/h_fond4.jpeg" alt="" />
-            </div>
-          </div>
-        </div>
-      </div>
-    </header>
-    <div class="menu">
-      <nav class="navbar navbar-expand-lg navbar-light">
-        <a class="navbar-brand" href="#">AL FATH</a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-toggle="collapse"
-          data-target="#navbarSupportedContent1"
-          aria-controls="navbarSupportedContent1"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
+ --------------------------*/
+/*  ----------- 01- Start Base CSS  ----------- */
+:root {
+  --main-green-color: #465d50;
+  --main-orange-color: rgba(255, 111, 72, 1);
+}
 
-        <div class="collapse navbar-collapse" id="navbarSupportedContent1">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0 ml-auto mr-auto">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#"
-                >Accueil
-              </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Le projet</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Islam </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Activités</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Qui sommes-nous </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#"> Dons </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Contact</a>
-            </li>
-          </ul>
-        </div>
-      </nav>
-    </div>
-    <section class="center container">
-      <div class="row">
-        <div class="col-lg-6">
-          <div
-            id="carouselExampleIndicators2"
-            class="carousel slide"
-            data-ride="carousel"
-          >
-            <div class="carousel-inner">
-              <div class="carousel-item active">
-                <div class="img_back">
-                  <img src="files/croquis1.png" alt="" />
-                </div>
-              </div>
-              <div class="carousel-item">
-                <div class="img_back">
-                  <img src="files/croquis2.png" alt="" />
-                </div>
-              </div>
-              <div class="carousel-item">
-                <div class="img_back">
-                  <img src="files/croquis1.png" alt="" />
-                </div>
-              </div>
-              <div class="carousel-item">
-                <div class="img_back">
-                  <img src="files/croquis2.png" alt="" />
-                </div>
-              </div>
-            </div>
-            <ol class="carousel-indicators">
-              <li
-                data-target="#carouselExampleIndicators2"
-                data-slide-to="0"
-                class="active"
-              ></li>
-              <li
-                data-target="#carouselExampleIndicators2"
-                data-slide-to="1"
-              ></li>
-              <li
-                data-target="#carouselExampleIndicators2"
-                data-slide-to="2"
-              ></li>
-              <li
-                data-target="#carouselExampleIndicators2"
-                data-slide-to="3"
-              ></li>
-            </ol>
-            <!--  <a
-              class="carousel-control-prev"
-              href="#carouselExampleControls2"
-              role="button"
-              data-bs-slide="prev"
-            >
-              <span
-                class="carousel-control-prev-icon"
-                aria-hidden="true"
-              ></span>
-            </a>
-            <a
-              class="carousel-control-next"
-              href="#carouselExampleControls2"
-              role="button"
-              data-bs-slide="next"
-            >
-              <span
-                class="carousel-control-next-icon"
-                aria-hidden="true"
-              ></span>
-            </a>-->
-          </div>
-        </div>
-        <div class="col-lg-6">
-          <div class="content">
-            <h3 class="m-title">Centre Al Fath</h3>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam
-              quas aliquid facere consequatur voluptates, debitis natus odit
-              quam libero obcaecati at modi veniam possimus omnis repellendus
-              nobis quia. Accusantium, quisquam. Lorem, ipsum dolor sit amet
-              consectetur adipisicing elit. Id praesentium expedita ea eos
-              laborum earum beatae! Quod facere, aliquam perspiciatis maxime
-              quis neque consequatur, expedita alias voluptatum quas, veritatis
-              ut ,Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Libero ducimus possimus excepturi sed necessitatibus earum rerum
-              ratione quasi, optio debitis corporis ea fuga natus nisi neque
-              dolorum officia quae Ut quis neque consequatur, expedita alias
-              voluptatum quas, veritatis ut ,Lorem ipsum dolor sit amet
-              consectetur adipisicing elit. Libero ducimus possimus excepturi
-              sed necessitatibus earum rerum ratione quasi, optio debitis
-              corporis ea fuga natus nisi neque dolorum officia quae Ut.
-            </p>
-            <div class="btn">En savoir Plus</div>
-          </div>
-        </div>
-      </div>
-    </section>
+ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
 
-    <section class="donate">
-      <div class="container">
-        <div class="row align-items-center">
-          <div class="col-lg-4 stats">
-            <div class="c100 p82 big">
-              <span>82<span style="font-size: 1.05em">%</span></span>
+a,
+a:hover {
+  color: inherit;
+}
 
-              <div class="slice">
-                <div class="bar"></div>
-                <div class="fill"></div>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-4 money">
-            <h4 class="recolte">105 697 €</h4>
-            <p class="p_recolte">récolté</p>
-            <p class="p_montant">sur un montant total de</p>
-            <h4 class="total">1 200 500 €</h4>
-          </div>
-          <div
-            class="col-lg-4 d-flex align-items-center justify-content-center"
-          >
-            <div class="my_btn_donate">
-              <button class="btn">Devenez donateur</button>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <div class="pilier">
-      <div class="img_pilier">
-        <img src="files/5_PILIERS.png" alt="" />
-      </div>
-    </div>
-    <section class="preire">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-8">
-            <h4 class="horaire-title">Horaires de prière</h4>
-            <ul class="horaiere">
-              <li>
-                <div class="row">
-                  <div class="col-2"><span id="jour0"> </span></div>
-                  <div class="col-10">
-                    <span class="time" id="fajr0"></span>
-                    <span class="time" id="Sunrise0"></span>
-                    <span class="time" id="dohr0"></span>
-                    <span class="time" id="3asr0"></span>
-                    <span class="time" id="maghreb0"></span>
-                    <span class="time" id="aicha0"></span>
-                  </div>
-                </div>
-              </li>
-              <span class="min_hr"></span>
-              <li>
-                <div class="row">
-                  <div class="col-2"><span id="jour1"> </span></div>
-                  <div class="col-10">
-                    <span class="time" id="fajr1"></span>
-                    <span class="time" id="Sunrise1"></span>
-                    <span class="time" id="dohr1"></span>
-                    <span class="time" id="3asr1"></span>
-                    <span class="time" id="maghreb1"></span>
-                    <span class="time" id="aicha1"></span>
-                  </div>
-                </div>
-              </li>
-              <span class="min_hr"></span>
-              <li>
-                <div class="row">
-                  <div class="col-2"><span id="jour2"> </span></div>
-                  <div class="col-10">
-                    <span class="time" id="fajr2"></span>
-                    <span class="time" id="Sunrise2"></span>
-                    <span class="time" id="dohr2"></span>
-                    <span class="time" id="3asr2"></span>
-                    <span class="time" id="maghreb2"></span>
-                    <span class="time" id="aicha2"></span>
-                  </div>
-                </div>
-              </li>
-              <span class="min_hr"></span>
-              <li>
-                <div class="row">
-                  <div class="col-2"><span id="jour3"> </span></div>
-                  <div class="col-10">
-                    <span class="time" id="fajr3"></span>
-                    <span class="time" id="Sunrise3"></span>
-                    <span class="time" id="dohr3"></span>
-                    <span class="time" id="3asr3"></span>
-                    <span class="time" id="maghreb3"></span>
-                    <span class="time" id="aicha3"></span>
-                  </div>
-                </div>
-              </li>
-              <span class="min_hr"></span>
-              <li>
-                <div class="row">
-                  <div class="col-2"><span id="jour4"> </span></div>
-                  <div class="col-10">
-                    <span class="time" id="fajr4"></span>
-                    <span class="time" id="Sunrise4"></span>
-                    <span class="time" id="dohr4"></span>
-                    <span class="time" id="3asr4"></span>
-                    <span class="time" id="maghreb4"></span>
-                    <span class="time" id="aicha4"></span>
-                  </div>
-                </div>
-              </li>
-              <span class="min_hr"></span>
-              <li>
-                <div class="row">
-                  <div class="col-2"><span id="jour5"> </span></div>
-                  <div class="col-10">
-                    <span class="time" id="fajr5"></span>
-                    <span class="time" id="Sunrise5"></span>
-                    <span class="time" id="dohr5"></span>
-                    <span class="time" id="3asr5"></span>
-                    <span class="time" id="maghreb5"></span>
-                    <span class="time" id="aicha5"></span>
-                  </div>
-                </div>
-              </li>
-              <span class="min_hr"></span>
-              <li>
-                <div class="row">
-                  <div class="col-2"><span id="jour6"> </span></div>
-                  <div class="col-10">
-                    <span class="time" id="fajr6"></span>
-                    <span class="time" id="Sunrise6"></span>
-                    <span class="time" id="dohr6"></span>
-                    <span class="time" id="3asr6"></span>
-                    <span class="time" id="maghreb6"></span>
-                    <span class="time" id="aicha6"></span>
-                  </div>
-                </div>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </section>
-    <div class="association">
-      <div class="above">
-        <div class="container">
-          <h3 class="as-title">Notre association</h3>
-          <p class="as desc">
-            Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
-            nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat
-            volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation
-            ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo
-            consequat.
-          </p>
-        </div>
-      </div>
-      <div class="below">
-        <div class="container">
-          <div class="row">
-            <div class="col-lg">
-              <div class="activitie">
-                <div class="my_icon">
-                  <img src="files/culte.png" alt="" />
-                </div>
-                <h4 class="act-title">Culte</h4>
-                <p class="act-desc">
-                  Culte ipsum dolor sit amet, consectetuer adipiscing elit, sed
-                  diam nonummy nibh euismod tincidunt ut laoreet dolore
-                </p>
-              </div>
-            </div>
-            <div class="col-lg">
-              <div class="activitie">
-                <div class="my_icon">
-                  <img src="files/education.png" alt="" />
-                </div>
-                <h4 class="act-title">éducation</h4>
-                <p class="act-desc">
-                  Culte ipsum dolor sit amet, consectetuer adipiscing elit, sed
-                  diam nonummy nibh euismod tincidunt ut laoreet dolore
-                </p>
-              </div>
-            </div>
-            <div class="col-lg">
-              <div class="activitie">
-                <div class="my_icon">
-                  <img src="files/fraternité.png" alt="" />
-                </div>
-                <h4 class="act-title">Fraternité</h4>
-                <p class="act-desc">
-                  Culte ipsum dolor sit amet, consectetuer adipiscing elit, sed
-                  diam nonummy nibh euismod tincidunt ut laoreet dolore
-                </p>
-              </div>
-            </div>
-            <div class="col-lg">
-              <div class="activitie">
-                <div class="my_icon">
-                  <img src="files/paix.png" alt="" />
-                </div>
-                <h4 class="act-title">paix</h4>
-                <p class="act-desc">
-                  Culte ipsum dolor sit amet, consectetuer adipiscing elit, sed
-                  diam nonummy nibh euismod tincidunt ut laoreet dolore
-                </p>
-              </div>
-            </div>
-            <div class="col-lg">
-              <div class="activitie">
-                <div class="my_icon">
-                  <img src="files/loisir.png" alt="" />
-                </div>
-                <h4 class="act-title">Loisir</h4>
-                <p class="act-desc">
-                  Culte ipsum dolor sit amet, consectetuer adipiscing elit, sed
-                  diam nonummy nibh euismod tincidunt ut laoreet dolore
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="contact">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-8">
-            <div class="row">
-              <div class="col-lg-5">
-                <div class="logo_fot">
-                  <img src="files/logo_foot.png" alt="" />
-                </div>
-              </div>
-              <div class="col-lg-6 offset-md-1">
-                <div class="info_contact">
-                  <h4 class="con-title">A2CSK</h4>
-                  <p class="con-adresse">
-                    2 bis rue du Béarn <br />68260 <br />Kingersheim
-                  </p>
-                  <h4 class="nous_contact">Nous Contacter</h4>
-                  <ul class="social_foot">
-                    <li class="phone">
-                      <a href="">
-                        <img src="files/téléphone.png" alt="" />
-                      </a>
-                    </li>
-                    <li class="fb">
-                      <a href="">
-                        <img src="files/facebook.png" alt="" />
-                      </a>
-                    </li>
-                    <li class="mail">
-                      <a href="">
-                        <img src="files/mail.png" alt="" />
-                      </a>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <footer class="footer">
-      <ul>
-        <li>
-          <a href="">Mentions Légales </a>
-        </li>
-        <li>
-          <a href=""> Nous contacter </a>
-        </li>
-        <li>
-          <a href="">Plan du site </a>
-        </li>
-      </ul>
-    </footer>
+a:hover {
+  text-decoration: none;
+}
 
-    <!--Slick Js -->
-    <script src="js/jquery.min.js"></script>
-    <script src="js/popper.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/main.js"></script>
-  </body>
-</html>
+li {
+  padding: 0;
+  margin: 0;
+}
+
+.btn {
+  border-radius: 0;
+}
+
+body {
+  font-family: "Alice", serif;
+  font-size: 16px;
+}
+
+@media (max-width: 992px) {
+  body {
+    font-size: 14px;
+  }
+}
+
+section {
+  padding: 45px 0;
+}
+
+@media (max-width: 992px) {
+  section {
+    padding: 30px 0;
+  }
+}
+
+p {
+  font-family: "Open Sans";
+  font-weight: 400;
+  font-style: normal;
+  font-size: 16px;
+}
+
+@media (max-width: 992px) {
+  p {
+    font-size: 14px;
+  }
+}
+
+img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+html {
+  overflow-x: hidden;
+}
+
+/*  ----------- 01 -End Base CSS   -----------*/
+/* ----------- 02 -start Header CSS   -----------*/
+header {
+  height: 75vh;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+@media (max-width: 992px) {
+  header {
+    height: 80vh;
+    display: none;
+  }
+}
+
+header .img_back img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+}
+
+header .h-content {
+  z-index: 99;
+  text-align: center;
+  width: 20vw;
+}
+
+@media (max-width: 992px) {
+  header .h-content {
+    width: 40vw;
+  }
+}
+
+header .h-content .main-content {
+  background-color: rgba(255, 255, 255, 0.685);
+  padding: 9vh 4vh 2vh;
+  margin-bottom: 2vh;
+}
+
+header .h-content .main-content .img_logo img {
+  width: 6vw;
+  height: 14vh;
+}
+
+@media (max-width: 992px) {
+  header .h-content .main-content .img_logo img {
+    width: 5vh;
+    height: 12vh;
+  }
+}
+
+header .h-content .main-content .img_logo .logo-title {
+  font-size: 1.6em;
+  color: #3d5aa4;
+  font-weight: bolder;
+  line-height: 1.5;
+}
+
+@media (max-width: 992px) {
+  header .h-content .main-content .img_logo .logo-title {
+    font-size: 1.2em;
+    line-height: 1.2em;
+  }
+}
+
+header .h-content .main-content .motivation {
+  font-size: 1.2em;
+  font-weight: 500;
+  line-height: 1.2;
+  margin: 1.5vh 0;
+}
+
+@media (max-width: 992px) {
+  header .h-content .main-content .motivation {
+    font-size: 1.1em;
+    line-height: 1.1;
+    margin: 1vh 0;
+  }
+}
+
+header .h-content .main-content .desc {
+  font-size: 0.7em;
+  font-weight: 600;
+  margin: 1vh 0 2.5vh;
+}
+
+header .decovrir_btn {
+  margin: 3vh 0 5vh;
+  text-align: center;
+}
+
+header .decovrir_btn .btn {
+  background-color: #cebc8d;
+  color: #fff;
+  text-align: left;
+  text-transform: uppercase;
+  font-size: 0.5em;
+  padding: 5px 18px;
+  line-height: 1.2;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+header .decovrir_btn .btn img {
+  width: 24px;
+  margin-right: 8px;
+}
+
+@media (max-width: 992px) {
+  header .decovrir_btn .btn img {
+    width: 18px;
+  }
+}
+
+header .carousel {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 75vh;
+  width: 100vw;
+}
+
+@media (max-width: 992px) {
+  header .carousel {
+    height: 80vh;
+  }
+}
+
+header .carousel .carousel-inner {
+  width: 100%;
+  height: 100%;
+}
+
+header .carousel .carousel-inner .carousel-item {
+  width: 100%;
+  height: 100%;
+}
+
+header .carousel-indicators {
+  bottom: 1vh;
+}
+
+header .carousel-indicators li {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background-color: transparent;
+  border: 1px solid #fff;
+}
+
+header .carousel-indicators li.active {
+  background-color: #fff;
+}
+
+.menu {
+  width: 100vw;
+  z-index: 990;
+}
+
+.menu .navbar {
+  background-color: #cebc8d;
+}
+
+.menu .navbar .navbar-brand {
+  display: none;
+  color: #fff !important;
+}
+
+@media (max-width: 992px) {
+  .menu .navbar {
+    text-align: center;
+  }
+  .menu .navbar .navbar-brand {
+    display: inline !important;
+    font-weight: 600;
+  }
+}
+
+.menu .navbar .nav-item {
+  margin: 0 25px;
+  padding: 2px 0;
+}
+
+.menu .navbar .nav-link {
+  font-size: 0.9em;
+}
+
+.menu .navbar .active {
+  font-size: 0.9em;
+  font-weight: 600;
+}
+
+.menu .navbar .nav-link,
+.menu .navbar .active {
+  color: #fff !important;
+}
+
+/* ----------- 02 -End Header CSS   -----------*/
+/* ----------- 04 -Start Center  CSS   -----------*/
+.center {
+  padding: 100px 0;
+}
+
+@media (max-width: 992px) {
+  .center {
+    text-align: center;
+  }
+}
+
+.center .m-title {
+  font-size: 2.5em;
+  margin-bottom: 5vh;
+  text-indent: 15px;
+  letter-spacing: 2px;
+}
+
+@media (max-width: 992px) {
+  .center .m-title {
+    font-size: 1.8em;
+    margin-bottom: 3vh;
+    margin-top: 3vh;
+    text-indent: 5px;
+    letter-spacing: 1px;
+  }
+}
+
+.center p {
+  font-size: 0.7em;
+  color: #666;
+  text-indent: 5px;
+  width: 80%;
+}
+
+@media (max-width: 992px) {
+  .center p {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+.center .img_back {
+  width: 95%;
+}
+
+.center .btn {
+  border: 1px solid #333;
+  color: #222;
+  padding: 5px 15px;
+  font-size: 0.9em;
+  margin-top: 4vh;
+}
+
+.center .carousel-indicators {
+  bottom: -4vh;
+}
+
+@media (max-width: 992px) {
+  .center .carousel-indicators {
+    position: static;
+  }
+}
+
+.center .carousel-indicators li {
+  border: 1px solid #000;
+  background-color: transparent;
+  width: 11px;
+  height: 11px;
+  border-radius: 50%;
+}
+
+@media (max-width: 992px) {
+  .center .carousel-indicators li {
+    width: 6px;
+    height: 6px;
+  }
+}
+
+.center .carousel-indicators li.active {
+  background-color: #333;
+}
+
+.center .btn:hover {
+  background-color: #111;
+  color: #fff !important;
+}
+
+.center .carousel-control-next-icon {
+  background-image: url("../files/FLECHE.png");
+  height: 6vh;
+}
+
+.center .carousel-control-next {
+  right: -3vw;
+}
+
+/* ----------- 03 -End Menu CSS   -----------*/
+/* ----------- 05  Start Donate CSS   -----------*/
+.donate {
+  background: url("../files/back_donate.png") no-repeat;
+  background-size: cover;
+  text-align: center;
+  color: #fff;
+  text-transform: uppercase;
+  /*
+  .att {
+    position: absolute;
+    top: 15vh !important;
+    left: 9vh !important;
+    font-size: 18px;
+    text-transform: uppercase;
+  }*/
+}
+
+.donate .c100.big {
+  font-size: 235px;
+  margin-left: auto;
+  margin-right: auto;
+  float: none;
+}
+
+@media (max-width: 992px) {
+  .donate .c100.big {
+    font-size: 150px;
+  }
+}
+
+.donate .c100 > span {
+  color: #fff;
+}
+
+.donate .c100::after {
+  background: url(../files/back_donate.png) no-repeat;
+}
+
+.donate .row > div {
+  height: 240px;
+}
+
+@media (max-width: 992px) {
+  .donate .row > div {
+    height: auto;
+  }
+}
+
+.donate .stats {
+  border-right: 1px solid #fff;
+}
+
+@media (max-width: 992px) {
+  .donate .stats {
+    margin-bottom: 2vh;
+  }
+}
+
+.donate .money {
+  border-right: 1px solid #fff;
+}
+
+@media (max-width: 992px) {
+  .donate .money {
+    margin-bottom: 2vh;
+  }
+}
+
+.donate .recolte {
+  font-size: 2.7em;
+}
+
+@media (max-width: 992px) {
+  .donate .recolte {
+    font-size: 1.8em;
+  }
+}
+
+.donate .total {
+  font-size: 2.8em;
+}
+
+@media (max-width: 992px) {
+  .donate .total {
+    font-size: 1.8em;
+  }
+}
+
+.donate .p_recolte {
+  font-size: 0.9em;
+  font-weight: 600;
+}
+
+@media (max-width: 992px) {
+  .donate .p_recolte {
+    font-size: 0.85em;
+  }
+}
+
+.donate .p_montant {
+  margin-top: 18px;
+  font-size: 0.9em;
+  font-weight: 600;
+}
+
+@media (max-width: 992px) {
+  .donate .p_montant {
+    font-size: 0.85em;
+  }
+}
+
+.donate .btn {
+  color: #fff;
+  border: 2px solid #fff;
+  padding: 16px 30px;
+  font-size: 1.4em;
+}
+
+@media (max-width: 992px) {
+  .donate .btn {
+    margin-top: 2vh;
+    font-size: 1.1em;
+    padding: 12px 20px;
+    border-width: 1.5px;
+  }
+}
+
+/* ----------- 05 -End donate CSS   -----------*/
+.pilier .img_pilier {
+  margin: auto;
+  text-align: center;
+  padding: 15vh 0 0;
+}
+
+@media (max-width: 992px) {
+  .pilier .img_pilier {
+    padding: 8vh 0 0;
+  }
+}
+
+.pilier img {
+  width: 70vw;
+  height: 70vh;
+  margin: auto;
+}
+
+@media (max-width: 992px) {
+  .pilier img {
+    width: 90vh;
+    height: auto;
+  }
+}
+
+.preire {
+  background: url("../files/horr.png") no-repeat;
+  background-size: cover;
+  height: 530px;
+  color: #fff;
+  padding: 60px 0;
+}
+
+@media (max-width: 992px) {
+  .preire {
+    padding: 45px 0 35px;
+    height: auto;
+  }
+}
+
+.preire .row > .col-10 {
+  padding: 0;
+}
+
+.preire .horaire-title {
+  font-size: 2.6em;
+  margin-bottom: 20px;
+}
+
+@media (max-width: 992px) {
+  .preire .horaire-title {
+    font-size: 2em;
+    margin-bottom: 15px;
+    text-align: center;
+  }
+}
+
+.preire ul li {
+  padding: 10px 0;
+}
+
+.preire ul li .jour {
+  font-size: 1.1em;
+  font-weight: 600;
+}
+
+@media (max-width: 992px) {
+  .preire ul li .jour {
+    font-size: 0.85em;
+    font-weight: 500;
+  }
+}
+
+.preire ul li .time {
+  margin-left: 20px;
+  font-weight: 300;
+  font-size: 0.65em;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+@media (max-width: 992px) {
+  .preire ul li .time {
+    margin-left: 18px;
+  }
+}
+
+.preire .min_hr {
+  height: 1px;
+  width: 20vw;
+  background-color: rgba(255, 255, 255, 0.575);
+  display: block;
+}
+
+.association {
+  padding: 0 0 50px;
+}
+
+.association .above {
+  background: url("../files/fond.png") no-repeat;
+  background-size: cover;
+  text-align: center;
+  color: #fff;
+  padding: 6% 0 12%;
+}
+
+@media (max-width: 992px) {
+  .association .above {
+    padding: 8% 0 10%;
+  }
+}
+
+.association .above p {
+  width: 60%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media (max-width: 992px) {
+  .association .above p {
+    width: 75%;
+  }
+}
+
+.association .below {
+  text-align: center;
+  margin-top: -15vh;
+}
+
+@media (max-width: 992px) {
+  .association .below {
+    margin-top: 4vh;
+  }
+}
+
+.association .below .activitie .my_icon {
+  background-color: #3d5aa4;
+  border-radius: 50%;
+  padding: 24px;
+  width: 155px;
+  height: 155px;
+  margin-bottom: 30px;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+@media (max-width: 992px) {
+  .association .below .activitie .my_icon {
+    padding: 20px;
+    width: 110px;
+    height: 110px;
+    margin-bottom: 20px;
+  }
+}
+
+.association .below .activitie .my_icon img {
+  width: 90%;
+}
+
+.association .below .activitie .act-title {
+  font-size: 1.2em;
+  text-transform: capitalize;
+}
+
+.association .below .activitie .act-desc {
+  font-size: 0.8em;
+  color: #666;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/*Contact */
+.contact {
+  padding: 45px;
+  background-color: #000;
+  color: #fff;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.contact .logo_fot {
+  text-align: center;
+}
+
+.contact .logo_fot img {
+  width: 40%;
+}
+
+.contact .info_contact {
+  text-align: left;
+}
+
+@media (max-width: 992px) {
+  .contact .info_contact {
+    text-align: center;
+    margin-top: 5vh;
+  }
+}
+
+.contact .info_contact .con-title {
+  font-weight: 600;
+  margin-bottom: 20px;
+  font-size: 1.3em;
+}
+
+.contact .info_contact .con-adresse {
+  font-size: 0.8em;
+  color: #999;
+}
+
+.contact .info_contact .nous_contact {
+  font-size: 1.3em;
+  font-weight: 600;
+  margin-bottom: 16px;
+}
+
+.contact .info_contact .social_foot li {
+  background-color: #fff;
+  display: inline-block;
+  border-radius: 50%;
+  padding: 8px 10px;
+  margin-right: 12px;
+  cursor: pointer;
+}
+
+@media (max-width: 992px) {
+  .contact .info_contact .social_foot li {
+    padding: 5px 8px;
+    margin-right: 8px;
+  }
+  .contact .info_contact .social_foot li img {
+    width: 18px;
+  }
+}
+
+.contact .info_contact .social_foot li img {
+  width: 22px;
+}
+
+.contact .info_contact .social_foot .phone:hover {
+  background-color: #465d50;
+}
+
+.contact .info_contact .social_foot .fb:hover {
+  background-color: #3b5998;
+}
+
+.contact .info_contact .social_foot .mail:hover {
+  background-color: #ff4c4c;
+}
+
+/*EndContact */
+.footer {
+  background-color: #2a261c;
+  text-align: center;
+  padding: 10px 0 12px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+@media (max-width: 992px) {
+  .footer {
+    padding: 5px 0;
+  }
+}
+
+.footer ul li {
+  display: inline-block;
+  color: #bbb;
+  margin: 0 20px;
+  font-size: 0.65em;
+}
+
+@media (max-width: 992px) {
+  .footer ul li {
+    margin: 0 14px;
+    font-size: 0.6;
+  }
+}
+/*# sourceMappingURL=main.css.map */
