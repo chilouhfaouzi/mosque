@@ -1,16 +1,16 @@
 $(document).ready(function () {
   var d = new Date();
   var day = d.getDay();
-  var month = d.getMonth();
+  var month = d.getMonth() + 1;
   var yaer = d.getFullYear;
   var days = [
-    "Sunday",
-    "Monday",
-    "Tuesday",
-    "Wednesday",
-    "Thursday",
-    "Friday",
-    "Saturday",
+    "Dimanche",
+    "Lundi",
+    "Mardi",
+    "Mercredi",
+    "Jeudi",
+    "Vendredi",
+    "Samedi",
   ];
 
   const settings = {
@@ -31,10 +31,11 @@ $(document).ready(function () {
   var timessalat = [];
   $.ajax(settings).done(function (response) {
     timessalat = response["data"];
+    console.log(timessalat);
     for (var i = 0; i < 7; i++) {
       $("#fajr" + i).text(timessalat[day + i]["timings"]["Fajr"].slice(0, -5));
-      $("#sunset" + i).text(
-        timessalat[day + i]["timings"]["Sunset"].slice(0, -5)
+      $("#Sunrise" + i).text(
+        timessalat[day + i]["timings"]["Sunrise"].slice(0, -5)
       );
       $("#dohr" + i).text(timessalat[day + i]["timings"]["Dhuhr"].slice(0, -5));
       $("#3asr" + i).text(timessalat[day + i]["timings"]["Asr"].slice(0, -5));
@@ -48,14 +49,14 @@ $(document).ready(function () {
 
     /* var day1 = timessalat[day]["timings"];
     var fajr = day1["Fajr"].slice(0, -5);
-    var sun = day1["Sunset"].slice(0, -5);
+    var sun = day1["Sunrise"].slice(0, -5);
     var dhur = day1["Dhuhr"].slice(0, -5);
     var asr = day1["Asr"].slice(0, -5);
     var magh = day1["Maghrib"].slice(0, -5);
     var isha = day1["Isha"].slice(0, -5);
 
     $("#fajr0").first().text(fajr);
-    $("#sunset0").text(sun);
+    $("#Sunrise0").text(sun);
     $("#dohr0").text(dhur);
     $("#3asr0").text(asr);
     $("#maghreb0").text(magh);
