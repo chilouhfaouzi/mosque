@@ -453,12 +453,14 @@ header .carousel-indicators li.active {
 
 @media (max-width: 992px) {
   .donate .stats {
+    border-right: none;
     margin-bottom: 2vh;
   }
 }
 
 .donate .money {
   border-right: 1px solid #fff;
+  border-right: none;
 }
 
 @media (max-width: 992px) {
