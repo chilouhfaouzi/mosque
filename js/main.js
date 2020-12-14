@@ -52,7 +52,7 @@ $(document).ready(function () {
         timessalat[daym + i]["timings"]["Isha"].slice(0, -5)
       );
 
-      $("#jour" + i).text(days[dayse + i]);
+      $("#jour" + i).text(days[(dayse + i) % 7]);
     }
 
     /* var day1 = timessalat[day]["timings"];
